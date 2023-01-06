@@ -1,0 +1,90 @@
+
+.clContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+}
+.clWrapper{
+    width: 90vw;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 15px -3px !important;
+    border: none !important;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.clHeader {
+    display: flex;
+    background-color: #ccc;
+
+}
+.clHeader > th{
+    flex: 2;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.clHeader > .rank{
+    flex: 1;
+}
+.clHeader > .name{
+    flex: 4;
+}
+.nameRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 4px;
+}
+.nameDown {
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+.taCenter{
+    justify-content: center;
+}
+.taLeft{
+    justify-content: flex-start;
+}
+.taRight{
+    justify-content: flex-end;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .clContainer .vol {
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .clContainer .supply {
+        display: none;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .clWrapper{
+        width: 100vw;
+    }
+    .clContainer .ch1w {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .clContainer .mCap {
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .clContainer .ch1h {
+        display: none;
+    }
+    .clContainer .rank {
+        display: none;
+    }
+}
+
+
