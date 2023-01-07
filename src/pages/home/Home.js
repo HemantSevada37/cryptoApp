@@ -7,7 +7,7 @@ import { DataContext } from '../../context/dataContext';
 import './Home.css';
 
 const Home = () => {
-  const { limit, setLimit } = useContext(DataContext);
+  const { limit, setLimit, cryptoData } = useContext(DataContext);
 
   return (
     <div className='indexPage'>
@@ -20,7 +20,7 @@ const Home = () => {
         <CryptoList />
       </div>
       <div className='pagination'>
-        <button onClick={()=>{setLimit(limit+10)}}>Show More</button>
+        {cryptoData && <button onClick={()=>{setLimit(limit+10)}}>Show More</button>}
       </div>
       <Footer />
     </div>

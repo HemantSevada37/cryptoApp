@@ -46,7 +46,7 @@ export const DataContextProvider =({children})=>{
               return {value: action.value, dir: tempDir};       
           default:         
               return state;  
-          } 
+        } 
       } 
 
     const [sort, dispatch]= useReducer(reducer, {value: "", dir: ""} );

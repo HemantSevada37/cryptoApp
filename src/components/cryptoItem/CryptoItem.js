@@ -83,9 +83,9 @@ const CryptoItem = ({element, fav}) => {
             <td className='mCap taRight'>{handleLargeValue(marketCap)}</td>
             <td className='vol taRight'>{handleLargeValue(volume)}</td>
             <td className='supply taRight'>{handleLargeValue(supply)}</td>
-            <td className='ch1h taRight' style={{color: pc1h>=0 ? "green" : "red"}}>{pc1h}%</td>
-            <td className='ch1d taRight' style={{color: pc1d>=0 ? "green" : "red"}}>{pc1d}%</td>
-            <td className='ch1w taRight' style={{color: pc1w>=0 ? "green" : "red"}}>{pc1w}%</td>
+            <td className='ch1h taRight' style={{color: pc1h>=0 ? "#00ED64" : "red"}}>{pc1h}%</td>
+            <td className='ch1d taRight' style={{color: pc1d>=0 ? "#00ED64" : "red"}}>{pc1d}%</td>
+            <td className='ch1w taRight' style={{color: pc1w>=0 ? "#00ED64" : "red"}}>{pc1w}%</td>
     </tr>
   )
 }

@@ -43,6 +43,7 @@
     top: -10px;
     right: -22px;
     color: red;
+    cursor: pointer;
 }
 .notFavItem{
     display: none;

@@ -4,3 +4,38 @@
     box-sizing: border-box;
     background-color: #f6f3f3;
 }
+.dark {
+    background-color: #666;
+}
+.dark .navbar{
+    background-color: #222;
+    color: whitesmoke;
+}
+.dark .nbRight .currDataTable{
+    background-color: #222; 
+    color: whitesmoke;
+}
+.dark .topContent{
+    background: linear-gradient(to right, rgb(66, 66, 66), rgb(66, 66, 66)) rgb(54, 54, 54);
+}
+
+.dark .clWrapper{
+    background-color: #333;
+    color: whitesmoke;
+} 
+.dark .clHeader{
+    background-color: #111;
+}
+.dark .ciContainer{
+    border-top: 1px solid #444;
+}
+.dark .ciContainer:hover{
+    background-color: #222;
+}
+
+.dark .footer{
+    background: linear-gradient(to right, rgb(66, 66, 66), rgb(66, 66, 66)) rgb(54, 54, 54);
+}
+
+
+

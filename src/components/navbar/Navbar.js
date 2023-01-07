@@ -1,15 +1,23 @@
 import React, { useContext, useState } from 'react'
 import { DataContext } from '../../context/dataContext';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
+import { ThemeContext } from '../../context/themeContext';
 import './Navbar.css';
+
+
 
 const Navbar = () => {
     const { currency, setCurrency } = useContext(DataContext);
+    const { darkMode, setDarkMode } = useContext(ThemeContext);
     const [showCurr, setShowCurr] = useState(false);
   
     const handleClickCurr = (value)=>{
         setShowCurr(false);
         setCurrency(value);
     }
+
   return (
     <div className='navbar'>
         <div className='nbLeft'>
@@ -23,7 +31,9 @@ const Navbar = () => {
         <div className='nbRight'>
           <div className='currData'
             onClick={()=>{setShowCurr(!showCurr)}}>
-            <span>{currency}</span>
+            <div className='currDataIcon'>
+              <span>{currency}</span><ArrowDropDownIcon/>
+            </div>
             {showCurr && 
               <div className='currDataTable'>
                 <div onClick={()=>{handleClickCurr("USD")}}>USD</div>
@@ -32,7 +42,11 @@ const Navbar = () => {
               </div>}
           </div>
           <div>Eng</div>
-          <div>Settings</div>
+          <div className='nbTheme' onClick={()=>{setDarkMode(!darkMode)}}>
+            <span>{darkMode ? <WbSunnyOutlinedIcon style={{fontSize:"16px"}}/> 
+                    : <DarkModeOutlinedIcon style={{fontSize:"16px"}}/>}</span>
+            <span>Theme</span>
+          </div>
         </div>
       </div>
   )

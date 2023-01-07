@@ -17,6 +17,11 @@
 .nbRight{
     position: relative;
 }
+.currDataIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .nbRight .currDataTable{
     border: 1px solid #666;
@@ -30,6 +35,12 @@
 }
 .currDataTable > div:hover{
     background-color: #bbb;
+}
+.nbTheme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
 }
 
 @media only screen and (max-width: 600px) {
