@@ -10,8 +10,6 @@ const CryptoItem = ({element, fav}) => {
     const {id, icon, name, symbol, rank, price, marketCap, volume, 
         totalSupply:supply, priceChange1h: pc1h, priceChange1d: pc1d,
          priceChange1w: pc1w} = element;
-        // console.log("elemetn id ", element);
-
 
     const handleLargeValue = (value)=>{
         let symbol = "₹";
@@ -22,7 +20,6 @@ const CryptoItem = ({element, fav}) => {
         }else if(currency === "EUR"){
             symbol = "€";
         }
-
 
         if(value > 1000000000){
             value = value/1000000000;
@@ -86,9 +83,9 @@ const CryptoItem = ({element, fav}) => {
             <td className='mCap taRight'>{handleLargeValue(marketCap)}</td>
             <td className='vol taRight'>{handleLargeValue(volume)}</td>
             <td className='supply taRight'>{handleLargeValue(supply)}</td>
-            <td className='ch1h taRight' style={{color: pc1h>0 ? "green" : "red"}}>{pc1h}%</td>
-            <td className='ch1d taRight' style={{color: pc1d>0 ? "green" : "red"}}>{pc1d}%</td>
-            <td className='ch1w taRight' style={{color: pc1w>0 ? "green" : "red"}}>{pc1w}%</td>
+            <td className='ch1h taRight' style={{color: pc1h>=0 ? "green" : "red"}}>{pc1h}%</td>
+            <td className='ch1d taRight' style={{color: pc1d>=0 ? "green" : "red"}}>{pc1d}%</td>
+            <td className='ch1w taRight' style={{color: pc1w>=0 ? "green" : "red"}}>{pc1w}%</td>
     </tr>
   )
 }

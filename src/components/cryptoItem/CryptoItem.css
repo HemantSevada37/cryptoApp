@@ -3,6 +3,9 @@
     height: 60px;
     border-top: 1px solid #bbb;
 }
+.ciContainer:hover{
+    background-color: #eee;
+}
 .ciContainer > td{
     flex: 2;
     padding: 10px;

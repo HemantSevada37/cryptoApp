@@ -1,0 +1,36 @@
+
+.topContent{
+    height: 200px;
+    background: linear-gradient(to right, rgb(100, 181, 246), rgb(63, 81, 181) ) rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: whitesmoke;
+}
+.topContent > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 30px;
+}
+.topContent > .mbView{
+    display: none;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .topContent > div{
+        display: none;
+    }
+    .topContent > .mbView{
+        display: block;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .topContent{
+        justify-content: start;
+        height: 150px;
+    }
+}

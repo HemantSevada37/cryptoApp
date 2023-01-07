@@ -1,6 +1,4 @@
-.indexPage{
-    
-}
+
 .banner {
     height: 40px;
     background: linear-gradient(90deg,  rgb(22, 209, 161) 5.6%, rgb(123, 97, 255) 59.16%, rgb(246, 135, 179) 119.34%);
@@ -8,59 +6,6 @@
     justify-content: center;
     align-items: center;
     color: whitesmoke;
-}
-.navbar {
-    height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.nbLeft, .nbCenter, .nbRight{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5vw;
-}
-.nbCenter{
-    font-size: x-large;
-    font: 900;
-}
-.nbRight{
-    position: relative;
-}
-
-.nbRight .currDataTable{
-    border: 1px solid #666;
-    background-color: #fff;
-    position: absolute;
-    top: 20px;
-    left: -10px;
-}
-.currDataTable > div{
-    padding: 5px 10px;
-}
-.currDataTable > div:hover{
-    background-color: #bbb;
-}
-
-.topContent{
-    height: 200px;
-    background: linear-gradient(to right, rgb(100, 181, 246), rgb(63, 81, 181) ) rgb(255, 255, 255) !important;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    color: whitesmoke;
-}
-.topContent > div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin-top: 30px;
-}
-.topContent > .mbView{
-    display: none;
 }
 
 .pagination{
@@ -84,37 +29,12 @@
 }
 
 
-.footer{
-    height: 200px;
-    background-color: aquamarine;
-}
-
-
-
-@media only screen and (max-width: 800px) {
-    .topContent > div{
-        display: none;
-    }
-    .topContent > .mbView{
-        display: block;
-        margin-left: 30px;
-        margin-top: 20px;
-    }
-    .topContent{
-        justify-content: start;
-        height: 150px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .nbLeft, .nbRight{
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 480px) {
     .pagination{
         height: 100px;
+    }
+    .pagination > button{
+        padding: 8px 16px;
     }
 }
 

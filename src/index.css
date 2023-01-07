@@ -6,35 +6,23 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-::-webkit-scrollbar {
-
-  width: 8px;
-  
-  height: 8px;
-  
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
   }
-  
-  /* Track */
-  
   ::-webkit-scrollbar-track {
-  
-  background: #e1dee7;
-  
-  border-radius: 3px;
-  
+    background: #e1dee7;
+    border-radius: 3px;
   }
-  /* Handle */
   ::-webkit-scrollbar-thumb {
-  background-color: #666666;
-  border-radius: 3px;
+    background-color: #666666;
+    border-radius: 3px;
   }
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+    background: #555;
   }
   
   
