@@ -15,7 +15,6 @@
 .clHeader {
     display: flex;
     background-color: #ccc;
-
 }
 .clHeader > th{
     flex: 2;

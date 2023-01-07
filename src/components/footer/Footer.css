@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     color: whitesmoke;
+    padding: 10px;
 }
 
 .ftContainer{
@@ -34,6 +35,10 @@
     }
     .ftContainer{
         gap: 10px;
+    }
+    .ftMedia{
+        flex-direction: column;
+        gap: 2px;
     }
 
 }
