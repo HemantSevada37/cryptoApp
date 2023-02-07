@@ -20,7 +20,10 @@ const Home = () => {
         <CryptoList />
       </div>
       <div className='pagination'>
-        {cryptoData && <button onClick={()=>{setLimit(limit+10)}}>Show More</button>}
+        {cryptoData && <button 
+          className={cryptoData.length<120 ? "on" : "off"} 
+          disabled={cryptoData.length<120 ? false : true} 
+          onClick={()=>{setLimit(limit+20)}}>Show More</button>}
       </div>
       <Footer />
     </div>

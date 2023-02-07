@@ -25,6 +25,12 @@
     align-items: center;
     cursor: pointer;
 }
+.clHeader > th > span{
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .clHeader > .rank{
     flex: 1;
 }

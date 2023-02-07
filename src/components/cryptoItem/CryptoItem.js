@@ -20,6 +20,9 @@ const CryptoItem = ({element, fav}) => {
         }else if(currency === "EUR"){
             symbol = "€";
         }
+        // console.log(value, id, name);
+
+        if(value === null) return `${symbol}00.0`;
 
         if(value > 1000000000){
             value = value/1000000000;

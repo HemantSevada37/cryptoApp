@@ -16,32 +16,45 @@ const CryptoList = () => {
                         <th className='name taLeft'>Name</th>
 
                         <th className='price taRight' 
-                            onClick={()=>{dispatch({value: "price"})}}
+                            onClick={()=>{dispatch({value: "price", dir: !(sort.dir)})}}
                             >Price {sort.value === "price" && 
-                            <ArrowDropDownIcon style={{transform: sort.dir ? 'rotate(180deg)' : ""}}/>}
+                            <span><ArrowDropDownIcon style={{transform: sort.dir ? 'rotate(180deg)' : ""}}/></span>
+                            }
                         </th>
 
                         <th className='mCap taRight'
-                            onClick={()=>{dispatch({value: "marketCap"})}}
+                            onClick={()=>{dispatch({value: "marketCap", dir: !(sort.dir)})}}
                             >MarketCap {sort.value === "marketCap" && 
                             <ArrowDropDownIcon style={{transform: sort.dir ? 'rotate(180deg)' : ""}}/>}
                         </th>
 
-                        <th className='vol taRight'>Volume</th>
-                        <th className='supply taRight'>Supply</th>
+                        <th className='vol taRight'
+                            onClick={()=>{dispatch({value: "volume", dir: !(sort.dir)})}}
+                            >Volume {sort.value === "volume" && 
+                            <ArrowDropDownIcon style={{transform: sort.dir ? 'rotate(180deg)' : ""}}/>}
+                        </th>
+                        <th className='supply taRight'
+                            onClick={()=>{dispatch({value: "supply", dir: !(sort.dir)})}}
+                            >Supply {sort.value === "supply" && 
+                            <ArrowDropDownIcon style={{transform: sort.dir ? 'rotate(180deg)' : ""}}/>}
+                        </th>
                         <th className='ch1h taRight'
-                            onClick={()=>{dispatch({value: "priceChange1h"})}}
+                            onClick={()=>{dispatch({value: "priceChange1h", dir: !(sort.dir)})}}
                             >Change(1h) {sort.value === "priceChange1h" && 
                             <ArrowDropDownIcon style={{transform: sort.dir ? 'rotate(180deg)' : ""}}/>}
                         </th>
 
                         <th className='ch1d taRight'
-                            onClick={()=>{dispatch({value: "priceChange1d"})}}
+                            onClick={()=>{dispatch({value: "priceChange1d", dir: !(sort.dir)})}}
                             >Change(1d) {sort.value === "priceChange1d" && 
                             <ArrowDropDownIcon style={{transform: sort.dir ? 'rotate(180deg)' : ""}}/>}
                         </th>
 
-                        <th className='ch1w taRight'>Change(1w)</th>
+                        <th className='ch1w taRight'
+                        onClick={()=>{dispatch({value: "priceChange1w", dir: !(sort.dir)})}}
+                            >Change(1w) {sort.value === "priceChange1w" && 
+                            <ArrowDropDownIcon style={{transform: sort.dir ? 'rotate(180deg)' : ""}}/>}
+                        </th>
                     </tr>
                 </thead>
                 <tbody>

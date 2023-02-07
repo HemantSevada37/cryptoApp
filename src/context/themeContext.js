@@ -9,7 +9,7 @@ export const ThemeContextProvider =({children})=>{
 
       useEffect(() => {
         localStorage.setItem("cryptoDarkMode", darkMode);
-        console.log(darkMode);
+        // console.log(darkMode);
       }, [darkMode]);
     
 
